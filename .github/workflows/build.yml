@@ -107,7 +107,7 @@ jobs:
           CACHE_TO: type=gha,scope=binaries-${{ env.PLATFORM_PAIR }},mode=max
       -
         name: Upload artifacts
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: buildx
           path: ${{ env.DESTDIR }}/*
